@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8EC945E-0479-42D2-9A07-3BE4DB0B4E90}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Charlotte</RootNamespace>
+    <AssemblyName>Charlotte</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Hubert\Documents\Visual Studio 2012\Projects\Charlotte\Installer\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\WindowsGL\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\WindowsGL\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D5FA1AF90F08105ACF990CA8EEEB4858FC75C91C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Charlotte_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Shooter\Boss1.cs" />
+    <Compile Include="Shooter\Boss2.cs" />
+    <Compile Include="Shooter\Boss3.cs" />
+    <Compile Include="Shooter\Boss4.cs" />
+    <Compile Include="Shooter\Level4.cs" />
+    <Compile Include="Shooter\Level3.cs" />
+    <Compile Include="Shooter\Level2.cs" />
+    <Compile Include="Shooter\Effects\PlayerExplosion.cs" />
+    <Compile Include="Shooter\Level1.cs" />
+    <Compile Include="Shooter\Players\CharlottePlayer.cs" />
+    <Compile Include="Shooter\Players\BobPlayer.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\Bedsheet.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\Anarfish.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\Assailant.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\BigBullet.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\Seal4.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\Seal3.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\Seal2.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\Seal1.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\NarmSlide.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\ProjectPoutine.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\FocusedAssailant.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\HomingPoutineBullet.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\PoutineBullet.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\Sweeper.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\PPP.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\HomingSquareLaser.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\KillerKlownPhish.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\Punkfish3.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\HomingSmallBullet.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\Punkfish2.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\SmallBullet.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\Punkfish.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\Plastic.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\Que.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\Skull.cs" />
+    <Compile Include="Shooter\Projectiles\PlayerProjectiles\CharlottePlayerProjectile.cs" />
+    <Compile Include="Shooter\Projectiles\PlayerProjectiles\BobPlayerProjectile.cs" />
+    <Compile Include="Shooter\Projectiles\PlayerProjectiles\HomingBobPlayerProjectile.cs" />
+    <Compile Include="Shooter\Projectiles\PlayerProjectiles\HomingPlayerProjectile.cs" />
+    <Compile Include="Slide\BossBanter1.cs" />
+    <Compile Include="Slide\BossBanter2.cs" />
+    <Compile Include="Slide\BossBanter3.cs" />
+    <Compile Include="Slide\BossBanter4.cs" />
+    <Compile Include="Slide\Ending.cs" />
+    <Compile Include="Slide\Scene4.cs" />
+    <Compile Include="Slide\GameOver.cs" />
+    <Compile Include="Slide\Quiz.cs" />
+    <Compile Include="Slide\Scene3.cs" />
+    <Compile Include="Slide\Scene2.cs" />
+    <Compile Include="Slide\Scene1.cs" />
+    <Compile Include="Content\CompressedLoader.cs" />
+    <Compile Include="Content\SoundEffectLoader.cs" />
+    <Compile Include="Content\TemporaryContent.cs" />
+    <Compile Include="Content\PersistentContent.cs" />
+    <Compile Include="Content\Texture2DLoader.cs" />
+    <Compile Include="IO\SaveLoadScreen.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Music\Soundtrack.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Selection\Selection.cs" />
+    <Compile Include="Shooter\Effects\Explosion.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\DummyEnemyProjectile.cs" />
+    <Compile Include="Shooter\Projectiles\PlayerProjectiles\DummyPlayerProjectile.cs" />
+    <Compile Include="Shooter\Projectiles\PlayerProjectiles\PlayerProjectile.cs" />
+    <Compile Include="Shooter\Projectiles\EnemyProjectiles\EnemyProjectile.cs" />
+    <Compile Include="Shooter\Level.cs" />
+    <Compile Include="Shooter\Players\DummyPlayer.cs" />
+    <Compile Include="Shooter\Players\Player.cs" />
+    <Compile Include="Shooter\Projectiles\Projectile.cs" />
+    <Compile Include="Shooter\TestLevel.cs" />
+    <Compile Include="Slide\Slide.cs" />
+    <Compile Include="Slide\SlideException.cs" />
+    <Compile Include="Slide\TestSlide.cs" />
+    <Compile Include="Music\SongPlayer.cs" />
+    <Compile Include="Sprite\AnimatedSprite.cs" />
+    <Compile Include="Extension.cs" />
+    <Compile Include="Sprite\Sprite.cs" />
+    <Compile Include="State\InitializingState.cs" />
+    <Compile Include="State\State.cs" />
+    <Compile Include="Test.cs" />
+    <Compile Include="Title.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="OpenTK">
+      <HintPath>$(MSBuildExtensionsPath)\..\MonoGame\v3.0\Assemblies\WindowsGL\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MSBuildExtensionsPath)\..\MonoGame\v3.0\Assemblies\WindowsGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network">
+      <HintPath>$(MSBuildExtensionsPath)\..\MonoGame\v3.0\Assemblies\WindowsGL\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.XML" />
+    <Reference Include="Tao.Sdl">
+      <HintPath>$(MSBuildExtensionsPath)\..\MonoGame\v3.0\Assemblies\WindowsGL\Tao.Sdl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\..\..\..\..\Program Files %28x86%29\MonoGame\v3.0\Assemblies\WindowsGL\SDL.dll">
+      <Link>SDL.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\Slide.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\Large.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\Normal.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\Small.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\XLarge.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icon.ico" />
+    <None Include="Charlotte_TemporaryKey.pfx" />
+    <None Include="Content\Compressed\BossBanter1.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Compressed\BossBanter2.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Compressed\BossBanter3.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Compressed\BossBanter4.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Compressed\Ending.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Compressed\Scene1.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Compressed\Scene2.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Compressed\Scene3.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Compressed\Scene4.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Compressed\ShooterSoundEffects.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Compressed\ShooterTextures.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Songs\IAmAFinalBoss.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\Explosion.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\SaveLoad.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\LoadingScreen.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Songs\Tutorial.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Songs\LastFightBeforeBattle.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Songs\PassingBy.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Songs\GoFishing.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Songs\GoFishingMotto.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Songs\Troublesome.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Songs\Bedsheet.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Songs\Irregularity.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Songs\SpookyVision.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Songs\FunnyShip.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Songs\Aurora.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Songs\CheeseCurd.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Songs\NoClubbing.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\TitleScreen.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <Content Include="Content\Test.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\Selection.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Content\TestTextures.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\TestSoundEffects.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
